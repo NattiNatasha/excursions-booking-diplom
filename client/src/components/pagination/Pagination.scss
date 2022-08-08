@@ -1,0 +1,25 @@
+@import '../../variables';
+
+.pagination {
+  display: inline-block;
+  margin-top: 2rem;
+
+  span {
+    color: $black;
+    font-size: 1.6rem;
+    float: left;
+    padding: 8px 16px;
+    cursor: pointer;
+
+    &.activated {
+      background-color: $blue;
+      color: $white;
+      border-radius: $br;
+    }
+
+    &:hover:not(.activated) {
+      background-color: #ddd;
+      border-radius: $br;
+    }
+  }
+}

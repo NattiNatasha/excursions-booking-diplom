@@ -1,0 +1,53 @@
+@import '../../variables';
+
+input {
+  width: 40rem;
+  height: 5rem;
+  background: none;
+  display: block;
+  border: 2px solid $blue;
+  border-radius: $br;
+  padding: 1.1rem;
+  font-size: 1.6rem;
+  color: $light-gray;
+
+  &::placeholder {
+    color: $light-gray;
+    font-size: 1.6rem;
+    opacity: 0.8;
+  }
+}
+
+.input--large {
+  height: 2.9rem;
+  width: 55rem;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  border: $border;
+
+  &::placeholder {
+    font-size: 1.4rem;
+  }
+}
+
+.input--small {
+  height: 3.2rem;
+  width: 22rem;
+  font-size: 1.4rem;
+  border: $border;
+
+  &::placeholder {
+    font-size: 1.4rem;
+  }
+}
+
+.input--noborder {
+  height: 3.4rem;
+  width: 27rem;
+  font-size: 1.4rem;
+  border: none;
+
+  &::placeholder {
+    font-size: 1.4rem;
+  }
+}

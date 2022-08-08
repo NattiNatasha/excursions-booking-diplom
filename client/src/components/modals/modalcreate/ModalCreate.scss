@@ -1,0 +1,80 @@
+@import '../../../variables';
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 0;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  border-radius: $br;
+  height: 45rem;
+  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.modal__header,
+.modal__body,
+.modal__footer,
+.row {
+  padding: 1.5rem 2rem;
+  width: 100%;
+}
+
+.modal__header .modal-close {
+  width: 2rem;
+  height: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: $blue;
+  cursor: pointer;
+
+  &:hover {
+    background: red;
+    color: $white;
+  }
+}
+
+.modal__header {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.modal__body {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.modal__title {
+  font-weight: bold;
+  color: $light-gray;
+  font-size: 2.4rem;
+  padding: 0 2rem;
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.modal__footer button:last-child {
+  margin-left: 1rem;
+}

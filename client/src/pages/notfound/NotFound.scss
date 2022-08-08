@@ -1,0 +1,27 @@
+@import '../../variables';
+
+.nf {
+  height: calc(100vh - 10rem);
+  flex: 1;
+  background: url('../../assets/img/not-found.png') no-repeat, #555555;
+  background-blend-mode: hard-light;
+  background-size: cover;
+  background-position: center;
+
+  &__title {
+    font-size: 12vw;
+    line-height: 12vw;
+    color: $white;
+    text-shadow: 1px 1px 0px #0002, 1px 1px 0px #aaa, 2px 2px 0px #aaa,
+      3px 3px 0px #aaa, 4px 4px 0px #aaa, 5px 5px 0px #aaa, 6px 6px 0px #aaa,
+      7px 7px 0px #aaa, 8px 8px 0px #aaa, 9px 9px 0px #aaa, 10px 10px 0px #aaa,
+      11px 11px 0px #aaa, 12px 12px 0px #aaa, 13px 13px 0px #aaa,
+      14px 14px 0px #aaa, 15px 15px 0px #0009, 20px 20px 10px #0009;
+  }
+  &__text {
+    font-size: 30px;
+    color: $white;
+    text-shadow: 0 5px 10px #000;
+    padding-bottom: 4rem;
+  }
+}

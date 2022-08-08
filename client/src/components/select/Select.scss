@@ -1,0 +1,13 @@
+@import '../../variables';
+
+.select {
+  margin-bottom: 1.5rem;
+
+  & select {
+    display: block;
+    border: $br;
+    margin: 0 0 5px;
+    height: 2.9rem;
+    width: 100%;
+  }
+}

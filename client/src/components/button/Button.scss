@@ -1,0 +1,89 @@
+@import '../../variables';
+
+.btn {
+  width: fit-content;
+  display: inline-block;
+  background: none;
+  border-radius: $br;
+  border: $border;
+  color: $blue;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    background: $blue;
+    color: $black;
+    background-position: 100% 0%;
+  }
+
+  &--xs {
+    height: 2.9rem;
+    padding: 4px 14px;
+    font-size: 1.6rem;
+  }
+
+  &--small {
+    height: 4rem;
+    padding: 4px 14px;
+    font-size: 1.6rem;
+  }
+
+  &--medium {
+    padding: 8px 20px;
+    font-size: 2rem;
+  }
+
+  &--xl {
+    width: 40rem;
+    height: 5rem;
+    border: 2px solid $blue;
+    border-radius: $br;
+    padding: 1.1rem;
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  &--large {
+    padding: 16px 26px;
+    font-size: 2rem;
+  }
+
+  &--transparent {
+    background: none;
+  }
+
+  &--red {
+    background: red;
+    color: $white;
+    border: none;
+
+    &:hover {
+      background: rgba(255, 0, 0, 0.4);
+      color: $white;
+      background-position: 100% 0%;
+    }
+  }
+
+  &--green {
+    background: green;
+    color: $white;
+    border: none;
+
+    &:hover {
+      background: rgba(0, 128, 0, 0.4);
+      color: $white;
+      background-position: 100% 0%;
+    }
+  }
+
+  &--black {
+    background: $blue;
+    color: $white;
+
+    &:hover {
+      background: #29d9d6b6;
+      color: $white;
+      background-position: 100% 0%;
+    }
+  }
+}

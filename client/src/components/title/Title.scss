@@ -1,0 +1,23 @@
+@import '../../variables';
+
+.heading {
+  color: $light-gray;
+  font-size: 3.6rem;
+
+  & span {
+    position: relative;
+    z-index: 0;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 1rem;
+      left: 0;
+      z-index: -1;
+      background: $blue;
+      height: 100%;
+      width: 100%;
+      clip-path: polygon(0 90%, 100% 83%, 100% 100%, 0% 100%);
+    }
+  }
+}

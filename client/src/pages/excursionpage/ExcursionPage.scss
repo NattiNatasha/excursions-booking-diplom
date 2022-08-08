@@ -1,0 +1,127 @@
+@import '../../variables';
+
+.packages__img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: $br;
+}
+
+.exc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 8rem;
+
+  &__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: $light-gray;
+  }
+
+  &__icon {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    color: $blue;
+    padding-right: 1.5rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    line-height: 2rem;
+    color: $light-gray;
+  }
+}
+
+.route {
+  font-size: 1.6rem;
+  color: $light-gray;
+}
+
+.included {
+  max-width: 60rem;
+  padding: 4rem 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+  border: 2px dashed $blue;
+  border-radius: $br;
+
+  &__title {
+    font-size: 2rem;
+    color: $light-gray;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: disc;
+    text-align: left;
+    font-size: 1.6rem;
+    color: $light-gray;
+
+    &-item {
+      list-style: disc;
+    }
+  }
+}
+
+.packages__description {
+  font-size: 1.6rem;
+  text-align: justify;
+  line-height: 2.2rem;
+}
+
+.packages__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.dates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    border-bottom: $border;
+    border-radius: $br;
+    padding: 1.5rem;
+    gap: 1rem;
+    & span {
+      font-size: 1.6rem;
+      color: $dark-gray;
+    }
+  }
+}
+
+.closest {
+  font-size: 1.8rem;
+  color: $dark-gray;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 920px) {
+  .dates {
+    column-gap: 16rem;
+  }
+}
